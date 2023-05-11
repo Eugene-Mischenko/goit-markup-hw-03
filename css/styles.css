@@ -193,7 +193,7 @@ img {
 }
 
 .work-item {
-  flex-basis: calc((100% - 3 * 16px) / 3);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 /** TEAM SECTION */
 
@@ -302,7 +302,7 @@ img {
   background-color: var(--hover-focus-color);
   border: 1px solid transparent;
 }
-.galery-foto-list {
+.galery-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
