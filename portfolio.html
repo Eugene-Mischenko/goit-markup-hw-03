@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,168 +17,192 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="logo link" href="./index.html"
-          >Web<span class="logo-color">Studio</span></a
-        >
-        <ul class="list">
-          <li>
-            <a class="navigation-link link" href="./index.html">Studio</a>
-          </li>
-          <li>
-            <a class="navigation-link link" href="./portfolio.html"
-              >Portfolio</a
-            >
-          </li>
-          <li><a class="navigation-link link" href="">Contacts</a></li>
-        </ul>
-      </nav>
-      <address class="address-list">
-        <ul class="list">
-          <li>
-            <a class="address-item link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-          <li>
-            <a class="address-item link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
-      </address>
+    <header class="header">
+      <div class="header-box container">
+        <nav class="navigation">
+          <a class="logo link" href="./index.html"
+            >Web<span class="logo-color">Studio</span></a
+          >
+          <ul class="navigation-menu list">
+            <li>
+              <a class="navigation-link link" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="navigation-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li><a class="navigation-link link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="address-list">
+          <ul class="address-menu list">
+            <li>
+              <a class="address-item link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="address-item link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <main>
-      <section>
-        <h1 hidden>Galery</h1>
-        <ul class="list">
-          <li><button class="button" type="button">All</button></li>
-          <li><button class="button" type="button">Web Site</button></li>
-          <li><button class="button" type="button">App</button></li>
-          <li><button class="button" type="button">Design</button></li>
-          <li><button class="button" type="button">Marketing</button></li>
-        </ul>
-        <ul class="list">
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/banking-app-interface-concept.jpg"
-                alt="Banking App Interface Concept"
-                width="360"
-                height="300"
-              />
-              <h2 class="name-member">Banking App Interface Concept</h2>
-              <p class="goals-text">App</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/cashless-payment.jpg"
-                alt="Cashless Payment"
-                width="360"
-                height="300"
-              />
-              <h2 class="name-member">Cashless Payment</h2>
-              <p class="goals-text">Marketing</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/meditation-app.jpg"
-                alt="Meditation App"
-                width="360"
-                height="300"
-              />
-              <h2 class="name-member">Meditation App</h2>
-              <p class="goals-text">App</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/taxi-service.jpg"
-                alt="Taxi Service"
-                width="360"
-                height="300"
-              />
-              <h2 class="name-member">Taxi Service</h2>
-              <p class="goals-text">Marketing</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/screen-illustrations.jpg"
-                alt="Screen Illustrations"
-                width="360"
-                height="300"
-              />
-              <h2 class="name-member">Screen Illustrations</h2>
-              <p class="goals-text">Design</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/online-courses.jpg"
-                alt="Online Courses"
-                width="360"
-                height="300"
-              />
-              <h2 class="name-member">Online Courses</h2>
-              <p class="goals-text">Marketing</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/instagram-stories-concept.jpg"
-                alt="Instagram Stories Concept"
-                width="360"
-                height="300"
-              />
-              <h2 class="name-member">Instagram Stories Concept</h2>
-              <p class="goals-text">Design</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/organic-food.jpg"
-                alt="Organic Food"
-                width="360"
-                height="300"
-              />
-              <h2 class="name-member">Organic Food</h2>
-              <p class="goals-text">Web Site</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/fresh-coffee.jpg"
-                alt="Fresh Coffee"
-                width="360"
-                height="300"
-              />
-              <h2 class="name-member">Fresh Coffee</h2>
-              <p class="goals-text">Web Site</p>
-            </a>
-          </li>
-        </ul>
+      <section class="galery">
+        <div class="container">
+          <h1 class="visually-hidden">Galery</h1>
+          <ul class="button-list list">
+            <li><button class="button" type="button">All</button></li>
+            <li><button class="button" type="button">Web Site</button></li>
+            <li><button class="button" type="button">App</button></li>
+            <li><button class="button" type="button">Design</button></li>
+            <li><button class="button" type="button">Marketing</button></li>
+          </ul>
+          <ul class="galery-foto-list list">
+            <li class="galery-foto">
+              <a class="link" href="">
+                <img
+                  src="./images/banking-app-interface-concept.jpg"
+                  alt="Banking App Interface Concept"
+                  width="360"
+                  height="300"
+                />
+                <div class="galery-info">
+                  <h2 class="name-member">Banking App Interface Concept</h2>
+                  <p class="goals-text">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery-foto">
+              <a class="link" href="">
+                <img
+                  src="./images/cashless-payment.jpg"
+                  alt="Cashless Payment"
+                  width="360"
+                  height="300"
+                />
+                <div class="galery-info">
+                  <h2 class="name-member">Cashless Payment</h2>
+                  <p class="goals-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery-foto">
+              <a class="link" href="">
+                <img
+                  src="./images/meditation-app.jpg"
+                  alt="Meditation App"
+                  width="360"
+                  height="300"
+                />
+                <div class="galery-info">
+                  <h2 class="name-member">Meditation App</h2>
+                  <p class="goals-text">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery-foto">
+              <a class="link" href="">
+                <img
+                  src="./images/taxi-service.jpg"
+                  alt="Taxi Service"
+                  width="360"
+                  height="300"
+                />
+                <div class="galery-info">
+                  <h2 class="name-member">Taxi Service</h2>
+                  <p class="goals-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery-foto">
+              <a class="link" href="">
+                <img
+                  src="./images/screen-illustrations.jpg"
+                  alt="Screen Illustrations"
+                  width="360"
+                  height="300"
+                />
+                <div class="galery-info">
+                  <h2 class="name-member">Screen Illustrations</h2>
+                  <p class="goals-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery-foto">
+              <a class="link" href="">
+                <img
+                  src="./images/online-courses.jpg"
+                  alt="Online Courses"
+                  width="360"
+                  height="300"
+                />
+                <div class="galery-info">
+                  <h2 class="name-member">Online Courses</h2>
+                  <p class="goals-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery-foto">
+              <a class="link" href="">
+                <img
+                  src="./images/instagram-stories-concept.jpg"
+                  alt="Instagram Stories Concept"
+                  width="360"
+                  height="300"
+                />
+                <div class="galery-info">
+                  <h2 class="name-member">Instagram Stories Concept</h2>
+                  <p class="goals-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery-foto">
+              <a class="link" href="">
+                <img
+                  src="./images/organic-food.jpg"
+                  alt="Organic Food"
+                  width="360"
+                  height="300"
+                />
+                <div class="galery-info">
+                  <h2 class="name-member">Organic Food</h2>
+                  <p class="goals-text">Web Site</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery-foto">
+              <a class="link" href="">
+                <img
+                  src="./images/fresh-coffee.jpg"
+                  alt="Fresh Coffee"
+                  width="360"
+                  height="300"
+                />
+                <div class="galery-info">
+                  <h2 class="name-member">Fresh Coffee</h2>
+                  <p class="goals-text">Web Site</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a class="logo link" href="./index.html"
-        >Web<span class="logo-color-footer">Studio</span></a
-      >
-      <p>
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+      <div class="container">
+        <a class="footer-logo link" href="./index.html"
+          >Web<span class="logo-color-footer">Studio</span></a
+        >
+        <p class="footer-text">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
