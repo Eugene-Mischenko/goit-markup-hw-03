@@ -1,14 +1,20 @@
 :root {
-  --defaul-color: #434455;
-  --text-color: #2e2f42;
-  --hover-focus-color: #404bbf;
-  --logo-color: #4d5ae5;
-  --border-color: #e7e9fc;
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --dark-color: #2e2f42;
+  --succes-color: #31d0aa;
+  --text-color: #434455;
+  --subtle-text-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --light-color: #f4f4fd;
+  --hero-background: #2e2f42;
+  --white-background: #ffffff;
+  --modal-background: #fcfcfc;
 }
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--defaul-color);
-  background-color: #ffffff;
+  color: var(--text-color);
+  background-color: var(--white-background);
 }
 img {
   display: block;
@@ -17,7 +23,9 @@ img {
 /*todo INDEX-PORTFOLIO HEADER */
 
 .header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--accent-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-box {
@@ -45,12 +53,12 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--logo-color);
+  color: var(--primary-brand);
   margin-right: 76px;
 }
 
 .logo-color {
-  color: var(--text-color);
+  color: var(--dark-color);
 }
 
 .link {
@@ -68,7 +76,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text-color);
+  color: var(--dark-color);
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -79,27 +87,28 @@ img {
 }
 .navigation-link:hover,
 .navigation-link:focus {
-  color: var(--hover-focus-color);
+  color: var(--pressed-state);
 }
 .address-list {
   font-style: normal;
+  margin-left: auto;
 }
 .address-item {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--defaul-color);
+  color: var(--text-color);
 }
 .address-item:hover,
 .address-item:focus {
-  color: var(--hover-focus-color);
+  color: var(--pressed-state);
 }
 
 /*! INDEX MAIN */
 /** HERO SECTION */
 
 .hero {
-  background-color: var(--text-color);
+  background-color: var(--hero-background);
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -108,28 +117,31 @@ img {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--white-background);
   max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 .hero-button {
-  background-color: var(--logo-color);
+  background-color: var(--primary-brand);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--white-background);
   cursor: pointer;
   display: block;
   min-width: 169px;
   height: 56px;
   border: none;
   border-radius: 4px;
+  margin: 0 auto;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--hover-focus-color);
+  background-color: var(--pressed-state);
 }
 
 /** GOALS SECTION */
@@ -165,14 +177,14 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--text-color);
+  color: var(--dark-color);
   margin-bottom: 8px;
 }
 .goals-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--defaul-color);
+  color: var(--text-color);
 }
 
 /** WORK SECTION */
@@ -186,7 +198,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--text-color);
+  color: var(--dark-color);
   margin-bottom: 72px;
 }
 
@@ -201,7 +213,7 @@ img {
 /** TEAM SECTION */
 
 .team {
-  background-color: #f4f4fd;
+  background-color: var(--light-color);
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -211,7 +223,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--text-color);
+  color: var(--dark-color);
   margin-bottom: 72px;
 }
 
@@ -220,7 +232,7 @@ img {
   gap: 24px;
 }
 .team-member {
-  background-color: #ffffff;
+  background-color: var(--white-background);
   flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
@@ -233,7 +245,7 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--text-color);
+  color: var(--dark-color);
   text-align: center;
   margin-bottom: 8px;
 }
@@ -241,14 +253,14 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--defaul-color);
+  color: var(--text-color);
   text-align: center;
 }
 
 /*todo INDEX-PORTFOLIO FOOTER */
 
 .footer {
-  background-color: var(--text-color);
+  background-color: var(--dark-color);
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -260,16 +272,16 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--logo-color);
+  color: var(--primary-brand);
   margin-right: 76px;
   margin-bottom: 16px;
   display: inline-block;
 }
 .logo-color-footer {
-  color: #f4f4fd;
+  color: var(--light-color);
 }
 .footer-text {
-  color: #f4f4fd;
+  color: var(--light-color);
   max-width: 264px;
 }
 
@@ -292,17 +304,17 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--logo-color);
-  background-color: #f4f4fd;
+  color: var(--primary-brand);
+  background-color: var(--light-color);
   cursor: pointer;
   padding: 12px 24px 12px 24px;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 .button:hover,
 .button:focus {
-  color: #ffffff;
-  background-color: var(--hover-focus-color);
+  color: var(--white-background);
+  background-color: var(--pressed-state);
   border: 1px solid transparent;
 }
 .galery-list {
@@ -318,6 +330,15 @@ img {
 
 .galery-info {
   padding: 32px 16px;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--accent-color);
   border-top: none;
+}
+
+.galery-about {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+  margin-bottom: 8px;
 }
